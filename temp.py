@@ -4,7 +4,8 @@ from xmlrpc.client import boolean
 
 
 def c():        #convert from F to C
-    print("Enter the temperature to convert to C")
+    temp = input(str("Enter the temperature to convert to C"))
+    
 
 
 def f():       #convert from C to F
@@ -22,7 +23,7 @@ def main():
 
     while (True) :
 
-        ans = input(str("Which conversion?\n [1] F to C ,OR\n [2] C to F"));
+        ans = input(str("Which conversion?\n [1] F to C ,OR\n [2] C to F    "));
         typeEval = check(ans)
 
         if (typeEval == True) :
@@ -38,5 +39,5 @@ def main():
             print("Could not get that")
             break;
 
-    if (__name__ == "__main__"):
-        main()
+if (__name__ == "__main__"):
+    main()
